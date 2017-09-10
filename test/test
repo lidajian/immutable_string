@@ -1,0 +1,8 @@
+#! /bin/bash
+
+for tests in `ls *.cpp`; do
+    echo $tests
+    g++ $tests
+    ./a.out > /dev/null
+done
+rm ./a.out
