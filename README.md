@@ -2,6 +2,8 @@
 
 Gain performance advantage over std mutable string when substr is heavily used.
 
+**Note: This branch is thread unsafe - when substring of the same string is desctructed in different thread, the reference counter may risk race condition**
+
 ## For users
 
 ### To import
