@@ -1,12 +1,15 @@
 # Immutable implementation of string
 
-Gain performance advantage over std mutable string when substr is heavily used.
+Gain performance advantage over std mutable string when substr is heavily used. (*Over 2X faster!*)
+
+*Faster thread-unsafe version is [here](https://github.com/lidajian/immutable_string/tree/thread_unsafe).*
+
 
 ## For users
 
 ### To import
 
-```#include "<DIR>/string.hpp"``` in the top of the .cpp file and use class ```string``` in namespace ```immutable```.
+```#include "<DIR>/string.hpp"``` in the top of the .cpp file, use class ```string``` in namespace ```immutable``` and compile with C++11.
 
 ### To use in program
 
@@ -22,7 +25,7 @@ Gain performance advantage over std mutable string when substr is heavily used.
 
 * Created substring from
 
-* Splitted with character into std::vector<immutable::string>
+* Splitted with character into ```std::vector<immutable::string>```
 
 Please refer to the source file for detail.
 

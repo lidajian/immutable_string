@@ -2,7 +2,7 @@
 
 for tests in `ls *.cpp`; do
     echo $tests
-    g++ $tests
+    g++ -std=c++11 $tests
     ./a.out > /dev/null
 done
 rm ./a.out
